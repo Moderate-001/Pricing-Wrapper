@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stalinist+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.card {
+    flex: 1;
+    background: #ffe5e5;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 35px 30px 30px;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: rgb(126, 126, 126);
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+
+.card h3 {
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.price {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price span {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.feature {
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.9;
+}
+
+.feature li {
+    display: flex;
+    gap: 8px;
+}
+
+.check {
+    color: #16a34a;
+    font-weight: bold;
+    align-items: center;
+}
+
+.check .icon {
+    color: white;
+    background: #008832;
+    border-radius: 3px;
+    padding: 0.1px 3.5px;
+    font-size: 12px;
+}
+
+.cross {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 22px;
+    background: #ff2b20;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    background-color: rgb(255, 0, 0);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: auto;
+        width: 100%;
+    }
+}
