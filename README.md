@@ -1,1 +1,2 @@
 # Pricing-Wrapper
+This project is a simple and responsive Pricing Wrapper UI built using HTML and CSS as part of my college assignment. It includes three pricing cards—Basic, Standard, and Premium—with their respective features, pricing details, and sign-up buttons. The design is clean, modern, and reusable for websites such as portfolios, landing pages, or SaaS products. The project structure contains an index.html file and a css/style.css file, and it can be viewed by opening the HTML file in any web browser.
